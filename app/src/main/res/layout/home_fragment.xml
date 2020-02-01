@@ -122,7 +122,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
                     android:layout_marginLeft="10dp"
-                    android:text="username"
+                    android:text="emma28foster"
                     android:layout_toRightOf="@id/post_profile_pic2"/>
 
                 <ImageView
@@ -170,6 +170,206 @@
             </RelativeLayout>
             <!--end 2st post-->
 
+            <!--3rd post-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/post_height">
+                <ImageButton
+                    android:id="@+id/post_profile_pic_3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    app:srcCompat="@drawable/profile_pic_face_2"
+                    />
+
+                <TextView
+                    android:id="@+id/post_username3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="username"
+                    android:layout_toRightOf="@id/post_profile_pic_3"/>
+
+                <ImageView
+                    android:id="@+id/post_image_3"
+                    android:layout_width="@dimen/post_pic_size"
+                    android:layout_height="@dimen/post_pic_size"
+                    android:layout_below="@id/post_profile_pic_3"
+                    app:srcCompat="@drawable/pink_post_3" />
+
+                <ImageButton
+                    android:id="@+id/heart_btn3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:scaleX="1.6"
+                    android:scaleY="1.6"
+                    android:backgroundTint="@color/Transparent"
+                    android:layout_toRightOf="@id/profile_btn3"
+                    android:layout_below="@id/post_image_3"
+                    app:srcCompat="@drawable/heart_icon"/>
+
+                <TextView
+                    android:id="@+id/like_num_tv_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/heart_btn3"
+                    android:textSize="18sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@id/post_image_3"
+                    android:text="123" />
+
+                <ImageButton
+                    android:id="@+id/profile_btn3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:scaleX="1.6"
+                    android:scaleY="1.6"
+                    android:backgroundTint="@color/Transparent"
+                    android:layout_below="@id/post_image_3"
+                    app:srcCompat="@drawable/chat_icon" />
+            </RelativeLayout>
+            <!--end 3rd post-->
+
+            <!--4th post-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/post_height">
+                <ImageButton
+                    android:id="@+id/post_profile_pic_4"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    app:srcCompat="@drawable/profile_pic_face_3"
+                    />
+
+                <TextView
+                    android:id="@+id/post_username4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="username"
+                    android:layout_toRightOf="@id/post_profile_pic_4"/>
+
+                <ImageView
+                    android:id="@+id/post_image_4"
+                    android:layout_width="@dimen/post_pic_size"
+                    android:layout_height="@dimen/post_pic_size"
+                    android:layout_below="@id/post_profile_pic_4"
+                    app:srcCompat="@drawable/post_4" />
+
+                <ImageButton
+                    android:id="@+id/heart_btn4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:scaleX="1.6"
+                    android:scaleY="1.6"
+                    android:backgroundTint="@color/Transparent"
+                    android:layout_toRightOf="@id/profile_btn4"
+                    android:layout_below="@id/post_image_4"
+                    app:srcCompat="@drawable/heart_icon" />
+
+                <TextView
+                    android:id="@+id/like_num_tv_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/heart_btn4"
+                    android:textSize="18sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@id/post_image_4"
+                    android:text="123" />
+
+                <ImageButton
+                    android:id="@+id/profile_btn4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:scaleX="1.6"
+                    android:scaleY="1.6"
+                    android:backgroundTint="@color/Transparent"
+                    android:layout_below="@id/post_image_4"
+                    app:srcCompat="@drawable/chat_icon" />
+            </RelativeLayout>
+            <!--end 4th post-->
+
+            <!--5th post-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/post_height">
+                <ImageButton
+                    android:id="@+id/post_profile_pic_5"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    app:srcCompat="@drawable/profile_pic_face_4"
+                    />
+
+                <TextView
+                    android:id="@+id/post_username5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="username"
+                    android:layout_toRightOf="@id/post_profile_pic_5"/>
+
+                <ImageView
+                    android:id="@+id/post_image_5"
+                    android:layout_width="@dimen/post_pic_size"
+                    android:layout_height="@dimen/post_pic_size"
+                    android:layout_below="@id/post_profile_pic_5"
+                    app:srcCompat="@drawable/post_5" />
+
+                <ImageButton
+                    android:id="@+id/heart_btn5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:scaleX="1.6"
+                    android:scaleY="1.6"
+                    android:backgroundTint="@color/Transparent"
+                    android:layout_toRightOf="@id/profile_btn5"
+                    android:layout_below="@id/post_image_5"
+                    app:srcCompat="@drawable/heart_icon" />
+
+                <TextView
+                    android:id="@+id/like_num_tv_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/heart_btn5"
+                    android:textSize="18sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@id/post_image_5"
+                    android:text="123" />
+
+                <ImageButton
+                    android:id="@+id/profile_btn5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:scaleX="1.6"
+                    android:scaleY="1.6"
+                    android:backgroundTint="@color/Transparent"
+                    android:layout_below="@id/post_image_5"
+                    app:srcCompat="@drawable/chat_icon" />
+            </RelativeLayout>
+            <!--end 5th post-->
 
 
         </LinearLayout>
