@@ -76,7 +76,8 @@
                     android:backgroundTint="@color/Transparent"
                     android:layout_toRightOf="@id/profile_btn"
                     android:layout_below="@id/post_image"
-                    app:srcCompat="@drawable/heart_icon" />
+                    app:srcCompat="@drawable/heart_icon"
+                    />
 
                 <TextView
                     android:id="@+id/like_num_tv"
