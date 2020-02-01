@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -15,9 +16,99 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/profile_pic"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/album_4"
+            />
 
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="jesse.miller7"
+            android:textSize="25dp"
+            android:textColor="@color/Black"
+            android:layout_toRightOf="@id/profile_pic"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="30dp"/>
+
+        <TextView
+            android:id="@+id/following_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="64"
+            android:layout_below="@id/username"
+            android:layout_toRightOf="@id/followers_num"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/Black"/>
+
+        <TextView
+            android:id="@+id/followers_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="485"
+            android:layout_below="@id/username"
+            android:layout_toRightOf="@id/profile_pic"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/Black"/>
+
+        <TextView
+            android:id="@+id/following_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="following"
+            android:layout_marginLeft="40dp"
+            android:layout_below="@id/following_num"
+            android:layout_toRightOf="@id/followers_tv"/>
+
+        <TextView
+            android:id="@+id/followers_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            tools:text="followers"
+            android:layout_toRightOf="@id/profile_pic"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@id/followers_num" />
+
+        <Button
+            android:id="@+id/edit_profile_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="edit profile"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/White"
+            android:layout_below="@id/followers_tv"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:elevation="10dp"
+            android:layout_marginBottom="20dp"
+            />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/Yellow"
+            android:rating="4.3"
+            android:layout_below="@id/followers_tv"
+            android:layout_marginLeft="40dp"
+            android:scaleY="0.5"
+            android:scaleX="0.5"
+            />
 
 
     </RelativeLayout>
+
+
 
 </FrameLayout>
