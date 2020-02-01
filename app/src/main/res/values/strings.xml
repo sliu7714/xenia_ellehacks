@@ -1,4 +1,25 @@
 <resources>
     <string name="app_name">Ellehacks</string>
     <string name="action_settings">Settings</string>
+
+    <!--list of username, post picture, like number-->
+    <string-array name="posts">
+        <item>Jenna Jones,pic1,14</item>
+        <item>Emma Smith,pic2,196</item>
+        <item>Benyn Joe,pic4,18</item>
+        <item>Sarah Miller,pic5,42</item>
+        <item>Chloe Cortez,pic6,37</item>
+        <item>Lily Owen,pic7,49</item>
+        <item>James Foley,pic8,183</item>
+        <item>Shanelle Hoff,pic9,36</item>
+        <item>Alysia Newman,pic10,88</item>
+        <item>Vivienne Corrigan,pic11,372</item>
+        <item>Cherie Akhtar,pic12,43</item>
+        <item>Azra Santos,pic13,488</item>
+        <item>Mat Horton,pic14,75</item>
+        <item>Mica Fox,pic15,32</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
