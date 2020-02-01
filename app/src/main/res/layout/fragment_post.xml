@@ -1,18 +1,159 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".PostFragment"
     >
 
-    <!-- TODO: Update blank fragment layout -->
+    <!--&lt;!&ndash; TODO: Update blank fragment layout &ndash;&gt;-->
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:text="post page" />-->
+
+    <ImageView
+        android:id="@+id/camera_view"
+        android:layout_width="380dp"
+        android:layout_height="380dp"
+        android:src="@drawable/profile_pic_flower" />
+
+
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="post page" />
+        android:layout_height="wrap_content"
+        android:text="Gallery"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:textColor="@color/Black"
+        android:textSize="20sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!--row 0-->
+                <ImageView
+                    android:id="@+id/pic_00"
+                    android:layout_width="@dimen/grid_side"
+                    android:layout_height="@dimen/grid_side"
+                    android:src="@drawable/post_5"
+                    app:layout_column="0"
+                    app:layout_row="0"
+                    />
+                <ImageView
+                    android:id="@+id/pic_01"
+                    android:layout_width="@dimen/grid_side"
+                    android:layout_height="@dimen/grid_side"
+                    android:src="@drawable/album_1"
+                    app:layout_column="1"
+                    app:layout_row="0"
+                    />
+                <ImageView
+                    android:id="@+id/pic_02"
+                    android:layout_width="@dimen/grid_side"
+                    android:layout_height="@dimen/grid_side"
+                    android:src="@drawable/post_5"
+                    app:layout_column="2"
+                    app:layout_row="0"
+                    />
+
+                <!--row 1-->
+                <ImageView
+                    android:id="@+id/pic_10"
+                    android:layout_width="@dimen/grid_side"
+                    android:layout_height="@dimen/grid_side"
+                    android:src="@drawable/post_5"
+                    app:layout_column="0"
+                    app:layout_row="1"
+                    />
+                <ImageView
+                    android:id="@+id/pic_11"
+                    android:layout_width="@dimen/grid_side"
+                    android:layout_height="@dimen/grid_side"
+                    android:src="@drawable/post_5"
+                    app:layout_column="1"
+                    app:layout_row="1"
+                    />
+                <ImageView
+                    android:id="@+id/pic_12"
+                    android:layout_width="@dimen/grid_side"
+                    android:layout_height="@dimen/grid_side"
+                    android:src="@drawable/post_5"
+                    app:layout_column="2"
+                    app:layout_row="1"
+                    />
+
+                <!--row 2-->
+                <ImageView
+                    android:id="@+id/pic_20"
+                    android:layout_width="@dimen/grid_side"
+                    android:layout_height="@dimen/grid_side"
+                    android:src="@drawable/post_5"
+                    app:layout_column="0"
+                    app:layout_row="2"
+                    />
+                <ImageView
+                    android:id="@+id/pic_21"
+                    android:layout_width="@dimen/grid_side"
+                    android:layout_height="@dimen/grid_side"
+                    android:src="@drawable/post_5"
+                    app:layout_column="1"
+                    app:layout_row="2"
+                    />
+                <ImageView
+                    android:id="@+id/pic_22"
+                    android:layout_width="@dimen/grid_side"
+                    android:layout_height="@dimen/grid_side"
+                    android:src="@drawable/post_5"
+                    app:layout_column="2"
+                    app:layout_row="2"
+                    />
+                <!--row 3-->
+                <ImageView
+                    android:id="@+id/pic_30"
+                    android:layout_width="@dimen/grid_side"
+                    android:layout_height="@dimen/grid_side"
+                    android:src="@drawable/post_5"
+                    app:layout_column="0"
+                    app:layout_row="3"
+                    />
+                <ImageView
+                    android:id="@+id/pic_31"
+                    android:layout_width="@dimen/grid_side"
+                    android:layout_height="@dimen/grid_side"
+                    android:src="@drawable/post_5"
+                    app:layout_column="1"
+                    app:layout_row="3"
+                    />
+                <ImageView
+                    android:id="@+id/pic_32"
+                    android:layout_width="@dimen/grid_side"
+                    android:layout_height="@dimen/grid_side"
+                    android:src="@drawable/post_5"
+                    app:layout_column="2"
+                    app:layout_row="3"
+                    />
 
 
 
-</FrameLayout>
+            </android.support.v7.widget.GridLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>
