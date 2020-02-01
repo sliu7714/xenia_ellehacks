@@ -46,8 +46,7 @@
                     android:layout_height="40dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginLeft="20dp"
-                    app:srcCompat="@drawable/profile_pic_flower"
-                    />
+                    app:srcCompat="@drawable/profile_pic_flower"/>
 
                 <TextView
                     android:id="@+id/post_username"
@@ -55,7 +54,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
                     android:layout_marginLeft="10dp"
-                    android:text="username"
+                    android:text="jackie.an"
                     android:layout_toRightOf="@id/post_profile_pic"/>
 
                 <ImageView
@@ -113,8 +112,7 @@
                     android:layout_height="40dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginLeft="20dp"
-                    app:srcCompat="@drawable/profile_pic_face_1"
-                    />
+                    app:srcCompat="@drawable/profile_pic_face_1" />
 
                 <TextView
                     android:id="@+id/post_username2"
@@ -143,7 +141,7 @@
                     android:backgroundTint="@color/Transparent"
                     android:layout_toRightOf="@id/profile_btn2"
                     android:layout_below="@id/post_image2"
-                    app:srcCompat="@drawable/heart_icon" />
+                    app:srcCompat="@drawable/heart_icon"/>
 
                 <TextView
                     android:id="@+id/like_num_tv2"
@@ -189,7 +187,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
                     android:layout_marginLeft="10dp"
-                    android:text="username"
+                    android:text="christine.p"
                     android:layout_toRightOf="@id/post_profile_pic_3"/>
 
                 <ImageView
@@ -221,7 +219,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginLeft="10dp"
                     android:layout_below="@id/post_image_3"
-                    android:text="123" />
+                    android:text="108" />
 
                 <ImageButton
                     android:id="@+id/profile_btn3"
@@ -256,7 +254,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
                     android:layout_marginLeft="10dp"
-                    android:text="username"
+                    android:text="sabrina.garcia"
                     android:layout_toRightOf="@id/post_profile_pic_4"/>
 
                 <ImageView
@@ -288,7 +286,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginLeft="10dp"
                     android:layout_below="@id/post_image_4"
-                    android:text="123" />
+                    android:text="145" />
 
                 <ImageButton
                     android:id="@+id/profile_btn4"
@@ -308,14 +306,14 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/post_height">
+
                 <ImageButton
                     android:id="@+id/post_profile_pic_5"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:layout_marginTop="10dp"
                     android:layout_marginLeft="20dp"
-                    app:srcCompat="@drawable/profile_pic_face_4"
-                    />
+                    android:layout_marginTop="10dp"
+                    app:srcCompat="@drawable/profile_pic_face_4"/>
 
                 <TextView
                     android:id="@+id/post_username5"
@@ -323,7 +321,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
                     android:layout_marginLeft="10dp"
-                    android:text="username"
+                    android:text="gabe1010"
                     android:layout_toRightOf="@id/post_profile_pic_5"/>
 
                 <ImageView
@@ -355,7 +353,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginLeft="10dp"
                     android:layout_below="@id/post_image_5"
-                    android:text="123" />
+                    android:text="87" />
 
                 <ImageButton
                     android:id="@+id/profile_btn5"
