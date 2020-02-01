@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageButton
+        android:id="@+id/post_profile_pic"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        app:srcCompat="@drawable/profile_pic_flower"
+        />
+
+    <TextView
+        android:id="@+id/post_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:text="username"
+        android:layout_toRightOf="@id/post_profile_pic"/>
+
+    <ImageView
+        android:id="@+id/post_image"
+        android:layout_width="450dp"
+        android:layout_height="450dp"
+        android:layout_below="@id/post_profile_pic"
+        app:srcCompat="@drawable/shirt_post_1" />
+
+    <ImageButton
+        android:id="@+id/heart_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="30dp"
+        android:scaleX="2.2"
+        android:scaleY="2.2"
+        android:backgroundTint="@color/Transparent"
+        android:layout_toRightOf="@id/chat_btn"
+        android:layout_below="@id/post_image"
+        app:srcCompat="@drawable/heart_icon" />
+
+    <TextView
+        android:id="@+id/like_num_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/heart_btn"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/post_image"
+        android:text="367" />
+
+    <ImageButton
+        android:id="@+id/chat_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="30dp"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:backgroundTint="@color/Transparent"
+        android:layout_below="@id/post_image"
+        app:srcCompat="@drawable/chat_icon" />
+
+
+</RelativeLayout>

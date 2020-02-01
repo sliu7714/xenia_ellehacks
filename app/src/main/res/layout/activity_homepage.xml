@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomepageActivity">
+
+
+    <FrameLayout
+        android:id="@+id/FragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomBar"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/LightGrey"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp"
+        android:elevation="15dp"
+        >
+
+        <ImageButton
+            android:id="@+id/homeButtonBottomBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/Transparent"
+            android:scaleX="2.3"
+            android:scaleY="2.3"
+            app:srcCompat="@drawable/home_icon" />
+
+        <ImageButton
+            android:id="@+id/calendarButtonBottomBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/homeButtonBottomBar"
+            android:layout_marginLeft="55dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toRightOf="@id/homeButtonBottomBar"
+            android:background="@color/Transparent"
+            android:scaleX="2"
+            android:scaleY="2"
+            app:srcCompat="@drawable/search_icon" />
+
+        <ImageButton
+            android:id="@+id/profileButtonBottomBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/calendarButtonBottomBar"
+            android:layout_marginLeft="55dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toRightOf="@id/calendarButtonBottomBar"
+            android:background="@color/Transparent"
+            android:scaleX="2"
+            android:scaleY="2"
+            app:srcCompat="@drawable/post_icon" />
+
+        <ImageButton
+            android:id="@+id/chatButtonBottomBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/profileButtonBottomBar"
+            android:layout_marginLeft="55dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toRightOf="@id/profileButtonBottomBar"
+            android:background="@color/Transparent"
+            android:scaleX="2.1"
+            android:scaleY="2.1"
+            app:srcCompat="@drawable/profile_icon" />
+
+    </RelativeLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>
