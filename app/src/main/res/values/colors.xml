@@ -9,6 +9,8 @@
     <color name="White">#FFFFFF</color>
     <color name="Black">#000000</color>
     <color name="Transparent">#00FFFFFF</color>
+    <color name="Red">#FD0303</color>
+    <color name="Coral">#EB95B1</color>
 
 
 </resources>
