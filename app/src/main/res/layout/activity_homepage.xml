@@ -29,7 +29,7 @@
         >
 
         <ImageButton
-            android:id="@+id/homeButtonBottomBar"
+            android:id="@+id/home_btn_bottom_bar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@color/Transparent"
@@ -38,39 +38,39 @@
             app:srcCompat="@drawable/home_icon" />
 
         <ImageButton
-            android:id="@+id/calendarButtonBottomBar"
+            android:id="@+id/explore_btn_bottom_bar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/homeButtonBottomBar"
+            android:layout_alignBottom="@+id/home_btn_bottom_bar"
             android:layout_marginLeft="55dp"
             android:layout_marginBottom="0dp"
-            android:layout_toRightOf="@id/homeButtonBottomBar"
+            android:layout_toRightOf="@id/home_btn_bottom_bar"
             android:background="@color/Transparent"
             android:scaleX="2"
             android:scaleY="2"
             app:srcCompat="@drawable/search_icon" />
 
         <ImageButton
-            android:id="@+id/profileButtonBottomBar"
+            android:id="@+id/post_btn_bottom_bar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/calendarButtonBottomBar"
+            android:layout_alignBottom="@+id/explore_btn_bottom_bar"
             android:layout_marginLeft="55dp"
             android:layout_marginBottom="0dp"
-            android:layout_toRightOf="@id/calendarButtonBottomBar"
+            android:layout_toRightOf="@id/explore_btn_bottom_bar"
             android:background="@color/Transparent"
             android:scaleX="2"
             android:scaleY="2"
             app:srcCompat="@drawable/post_icon" />
 
         <ImageButton
-            android:id="@+id/chatButtonBottomBar"
+            android:id="@+id/profile_btn_bottom_bar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/profileButtonBottomBar"
+            android:layout_alignBottom="@+id/post_btn_bottom_bar"
             android:layout_marginLeft="55dp"
             android:layout_marginBottom="0dp"
-            android:layout_toRightOf="@id/profileButtonBottomBar"
+            android:layout_toRightOf="@id/post_btn_bottom_bar"
             android:background="@color/Transparent"
             android:scaleX="2.1"
             android:scaleY="2.1"
