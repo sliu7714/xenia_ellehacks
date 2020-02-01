@@ -53,6 +53,7 @@
                     app:layout_column="0"
                     app:layout_row="0"
                     />
+
                 <ImageView
                     android:id="@+id/pic_01"
                     android:layout_width="@dimen/grid_side"
