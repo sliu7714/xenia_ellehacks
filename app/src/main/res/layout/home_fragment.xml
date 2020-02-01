@@ -21,4 +21,158 @@
     <!--app:layout_constraintTop_toBottomOf="parent" />-->
 
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_marginTop="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--1st post-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/post_height">
+                <ImageButton
+                    android:id="@+id/post_profile_pic"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    app:srcCompat="@drawable/profile_pic_flower"
+                    />
+
+                <TextView
+                    android:id="@+id/post_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="username"
+                    android:layout_toRightOf="@id/post_profile_pic"/>
+
+                <ImageView
+                    android:id="@+id/post_image"
+                    android:layout_width="@dimen/post_pic_size"
+                    android:layout_height="@dimen/post_pic_size"
+                    android:layout_below="@id/post_profile_pic"
+                    app:srcCompat="@drawable/shirt_post_1" />
+
+                <ImageButton
+                    android:id="@+id/heart_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:scaleX="1.6"
+                    android:scaleY="1.6"
+                    android:backgroundTint="@color/Transparent"
+                    android:layout_toRightOf="@id/profile_btn"
+                    android:layout_below="@id/post_image"
+                    app:srcCompat="@drawable/heart_icon" />
+
+                <TextView
+                    android:id="@+id/like_num_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/heart_btn"
+                    android:textSize="18sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@id/post_image"
+                    android:text="123" />
+
+                <ImageButton
+                    android:id="@+id/profile_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:scaleX="1.6"
+                    android:scaleY="1.6"
+                    android:backgroundTint="@color/Transparent"
+                    android:layout_below="@id/post_image"
+                    app:srcCompat="@drawable/chat_icon" />
+            </RelativeLayout>
+            <!--end 1st post-->
+
+            <!--2st post-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/post_height">
+                <ImageButton
+                    android:id="@+id/post_profile_pic2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    app:srcCompat="@drawable/profile_pic_face_1"
+                    />
+
+                <TextView
+                    android:id="@+id/post_username2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="username"
+                    android:layout_toRightOf="@id/post_profile_pic2"/>
+
+                <ImageView
+                    android:id="@+id/post_image2"
+                    android:layout_width="@dimen/post_pic_size"
+                    android:layout_height="@dimen/post_pic_size"
+                    android:layout_below="@id/post_profile_pic2"
+                    app:srcCompat="@drawable/post_black_coat" />
+
+                <ImageButton
+                    android:id="@+id/heart_btn2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:scaleX="1.6"
+                    android:scaleY="1.6"
+                    android:backgroundTint="@color/Transparent"
+                    android:layout_toRightOf="@id/profile_btn2"
+                    android:layout_below="@id/post_image2"
+                    app:srcCompat="@drawable/heart_icon" />
+
+                <TextView
+                    android:id="@+id/like_num_tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/heart_btn2"
+                    android:textSize="18sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@id/post_image2"
+                    android:text="48" />
+
+                <ImageButton
+                    android:id="@+id/profile_btn2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:scaleX="1.6"
+                    android:scaleY="1.6"
+                    android:backgroundTint="@color/Transparent"
+                    android:layout_below="@id/post_image2"
+                    app:srcCompat="@drawable/chat_icon" />
+            </RelativeLayout>
+            <!--end 2st post-->
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
 </android.support.constraint.ConstraintLayout>
