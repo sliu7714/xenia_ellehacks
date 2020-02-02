@@ -76,20 +76,20 @@
             android:layout_toRightOf="@id/heart_btn"
             android:textSize="18sp" />
 
-        <!--<ImageButton-->
-            <!--android:id="@+id/heart_btn"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_below="@id/post_image"-->
-            <!--android:layout_marginLeft="12dp"-->
-            <!--android:layout_marginTop="10dp"-->
-            <!--android:layout_marginBottom="5dp"-->
-            <!--android:layout_toRightOf="@id/heart_btn"-->
-            <!--android:backgroundTint="@color/Transparent"-->
-            <!--android:scaleX="2.1"-->
-            <!--android:scaleY="2.1"-->
-            <!--android:tint="@color/Black"-->
-            <!--app:srcCompat="@drawable/dislike" />-->
+        <ImageButton
+            android:id="@+id/heart2_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/post_image"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@id/heart_btn"
+            android:backgroundTint="@color/Transparent"
+            android:scaleX="2.1"
+            android:scaleY="2.1"
+            android:tint="@color/Black"
+            app:srcCompat="@drawable/dislike" />
 
         <TextView
             android:id="@+id/like_num_tv_1"
@@ -122,8 +122,8 @@
             android:layout_marginTop="19dp"
             android:layout_marginBottom="5dp"
             android:background="@color/Transparent"
-            android:scaleX="2"
-            android:scaleY="2"
+            android:scaleX="1.6"
+            android:scaleY="1.6"
             app:srcCompat="@drawable/chat_icon" />
 
         <TextView
