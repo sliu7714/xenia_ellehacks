@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".ProfileFragment">
 
     <!--&lt;!&ndash; TODO: Update blank fragment layout &ndash;&gt;-->
@@ -12,6 +14,220 @@
         <!--android:layout_height="match_parent"-->
         <!--android:text="profile page" />-->
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/profile_pic"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/album_4"
+            />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="jesse.miller7"
+            android:textSize="25dp"
+            android:textColor="@color/Black"
+            android:layout_toRightOf="@id/profile_pic"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="30dp"/>
+
+        <TextView
+            android:id="@+id/following_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="64"
+            android:layout_below="@id/username"
+            android:layout_toRightOf="@id/followers_num"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/Black"/>
+
+        <TextView
+            android:id="@+id/followers_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="485"
+            android:layout_below="@id/username"
+            android:layout_toRightOf="@id/profile_pic"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/Black"/>
+
+        <TextView
+            android:id="@+id/following_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="following"
+            android:layout_marginLeft="40dp"
+            android:layout_below="@id/following_num"
+            android:layout_toRightOf="@id/followers_tv"/>
+
+        <TextView
+            android:id="@+id/followers_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            tools:text="followers"
+            android:layout_toRightOf="@id/profile_pic"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@id/followers_num" />
+
+        <Button
+            android:id="@+id/edit_profile_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="edit profile"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/White"
+            android:layout_below="@id/followers_tv"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:elevation="10dp"
+            android:layout_marginBottom="20dp"
+            />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:isIndicator="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:rating="4.3"
+            android:layout_below="@id/followers_tv"
+            android:layout_marginLeft="110dp"
+            android:scaleY="0.6"
+            android:scaleX="0.6"
+            />
 
 
-</FrameLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!--row 0-->
+                <ImageView
+                    android:id="@+id/pic_00"
+                    android:layout_width="@dimen/grid_side"
+                    android:layout_height="@dimen/grid_side"
+                    android:src="@drawable/album_1"
+                    app:layout_column="0"
+                    app:layout_row="0"
+                    />
+
+                <ImageView
+                    android:id="@+id/pic_01"
+                    android:layout_width="@dimen/grid_side"
+                    android:layout_height="@dimen/grid_side"
+                    android:src="@drawable/album_2"
+                    app:layout_column="1"
+                    app:layout_row="0"
+                    />
+                <ImageView
+                    android:id="@+id/pic_02"
+                    android:layout_width="@dimen/grid_side"
+                    android:layout_height="@dimen/grid_side"
+                    android:src="@drawable/scroll_post_3"
+                    app:layout_column="2"
+                    app:layout_row="0"
+                    />
+
+                <!--row 1-->
+                <ImageView
+                    android:id="@+id/pic_10"
+                    android:layout_width="@dimen/grid_side"
+                    android:layout_height="@dimen/grid_side"
+                    android:src="@drawable/pic4"
+                    app:layout_column="0"
+                    app:layout_row="1"
+                    />
+                <ImageView
+                    android:id="@+id/pic_11"
+                    android:layout_width="@dimen/grid_side"
+                    android:layout_height="@dimen/grid_side"
+                    android:src="@drawable/album_5"
+                    app:layout_column="1"
+                    app:layout_row="1"
+                    />
+                <ImageView
+                    android:id="@+id/pic_12"
+                    android:layout_width="@dimen/grid_side"
+                    android:layout_height="@dimen/grid_side"
+                    android:src="@drawable/album_6"
+                    app:layout_column="2"
+                    app:layout_row="1"
+                    />
+
+                <!--row 2-->
+                <ImageView
+                    android:id="@+id/pic_20"
+                    android:layout_width="@dimen/grid_side"
+                    android:layout_height="@dimen/grid_side"
+                    android:src="@drawable/pic19"
+                    app:layout_column="0"
+                    app:layout_row="2"
+                    />
+                <ImageView
+                    android:id="@+id/pic_21"
+                    android:layout_width="@dimen/grid_side"
+                    android:layout_height="@dimen/grid_side"
+                    android:src="@drawable/pic8"
+                    app:layout_column="1"
+                    app:layout_row="2"
+                    />
+                <ImageView
+                    android:id="@+id/pic_22"
+                    android:layout_width="@dimen/grid_side"
+                    android:layout_height="@dimen/grid_side"
+                    android:src="@drawable/pic17"
+                    app:layout_column="2"
+                    app:layout_row="2"
+                    />
+                <!--row 3-->
+                <ImageView
+                    android:id="@+id/pic_30"
+                    android:layout_width="@dimen/grid_side"
+                    android:layout_height="@dimen/grid_side"
+                    android:src="@drawable/pic11"
+                    app:layout_column="0"
+                    app:layout_row="3"
+                    />
+                <ImageView
+                    android:id="@+id/pic_31"
+                    android:layout_width="@dimen/grid_side"
+                    android:layout_height="@dimen/grid_side"
+                    android:src="@drawable/post_vest"
+                    app:layout_column="1"
+                    app:layout_row="3"
+                    />
+
+
+
+
+            </android.support.v7.widget.GridLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

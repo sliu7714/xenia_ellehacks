@@ -32,8 +32,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@color/Transparent"
-            android:scaleX="2.3"
-            android:scaleY="2.3"
+            android:scaleX="2"
+            android:scaleY="2"
             app:srcCompat="@drawable/home_icon" />
 
         <ImageButton
@@ -58,8 +58,8 @@
             android:layout_marginBottom="0dp"
             android:layout_toRightOf="@id/explore_btn"
             android:background="@color/Transparent"
-            android:scaleX="2.3"
-            android:scaleY="2.3"
+            android:scaleX="1.8"
+            android:scaleY="1.8"
             app:srcCompat="@drawable/post_icon" />
 
         <ImageButton
@@ -72,8 +72,8 @@
             android:layout_toRightOf="@id/post_btn"
             android:background="@color/Transparent"
             android:backgroundTint="@color/Transparent"
-            android:scaleX="1.8"
-            android:scaleY="1.8"
+            android:scaleX="2"
+            android:scaleY="2"
             app:srcCompat="@drawable/profile_icon" />
 
     </RelativeLayout>
