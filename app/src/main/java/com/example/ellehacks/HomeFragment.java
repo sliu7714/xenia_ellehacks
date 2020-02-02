@@ -19,10 +19,16 @@ public class HomeFragment extends Fragment {
 
     public ImageButton heart1;
     public ImageButton heart2;
+    public ImageButton heart3;
+    public ImageButton heart4;
+    public ImageButton heart5;
     public String red = "#FA5151";
 
     private TextView likes_1;
     private TextView likes_2;
+    private TextView likes_3;
+    private TextView likes_4;
+    private TextView likes_5;
 
     private ImageButton chat_icon;
 
@@ -57,6 +63,37 @@ public class HomeFragment extends Fragment {
             public void onClick(View v) {
                 heart2.setColorFilter(Color.parseColor(red));
                 likes_2.setText("49");
+            }
+        });
+
+
+        heart3 = view.findViewById(R.id.heart_btn3);
+        likes_3 = view.findViewById(R.id.like_num_tv_3);
+        heart3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                heart3.setColorFilter(Color.parseColor(red));
+                likes_3.setText("109");
+            }
+        });
+
+        heart4 = view.findViewById(R.id.heart_btn4);
+        likes_4 = view.findViewById(R.id.like_num_tv_4);
+        heart4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                heart4.setColorFilter(Color.parseColor(red));
+                likes_4.setText("146");
+            }
+        });
+
+        heart5 = view.findViewById(R.id.heart_btn5);
+        likes_5 = view.findViewById(R.id.like_num_tv_5);
+        heart5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                heart5.setColorFilter(Color.parseColor(red));
+                likes_5.setText("88");
             }
         });
 

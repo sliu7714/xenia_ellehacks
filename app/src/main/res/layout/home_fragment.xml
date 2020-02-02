@@ -62,7 +62,7 @@
                     android:layout_width="@dimen/post_pic_size"
                     android:layout_height="@dimen/post_pic_size"
                     android:layout_below="@id/post_profile_pic"
-                    app:srcCompat="@drawable/shirt_post_1" />
+                    app:srcCompat="@drawable/pic20" />
 
                 <ImageButton
                     android:id="@+id/heart_btn"
@@ -109,7 +109,7 @@
                     android:layout_marginLeft="30dp"
                     android:layout_marginTop="0dp"
                     android:layout_marginBottom="20dp"
-                    android:text="Yellow, black plaid shirt"
+                    android:text="White Nike Shoes"
                     android:textSize="18sp" />
 
             </RelativeLayout>

@@ -143,16 +143,6 @@
             android:background="@color/Grey"
             android:text="#sweater" />
 
-        <TextView
-            android:id="@+id/textView7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/desc"
-            android:layout_marginLeft="13dp"
-            android:layout_marginTop="1dp"
-            android:layout_toRightOf="@id/textView6"
-            android:background="@color/Grey"
-            android:text="#red" />
 
 
         <ImageView

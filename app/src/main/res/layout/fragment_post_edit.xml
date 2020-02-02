@@ -10,9 +10,9 @@
 
     <ImageView
         android:id="@+id/profile_pic"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginTop="45dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="85dp"
         android:layout_marginLeft="20dp"
         android:src="@drawable/album_4" />
 
@@ -21,17 +21,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="jessie.miller7"
-        android:layout_marginLeft="18dp"
+        android:textSize="12sp"
+        android:layout_marginLeft="13dp"
         android:layout_marginTop="5dp"
         android:layout_below="@id/profile_pic"/>
 
     <ImageView
         android:id="@+id/post_image"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
         android:src="@drawable/album_1"
         android:layout_toRightOf="@id/profile_pic"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="60dp"
         android:layout_marginLeft="20dp"/>
 
     <EditText
@@ -41,7 +42,7 @@
         android:ems="20"
         android:textSize="14sp"
         android:hint="Write a description..."
-        android:layout_marginLeft="10dp"
+        android:layout_marginLeft="11dp"
         android:layout_marginTop="20dp"
         android:layout_below="@id/post_image"
         android:inputType="textPersonName" />
@@ -85,7 +86,7 @@
         android:layout_height="wrap_content"
         android:ems="20"
         android:layout_marginLeft="16dp"
-        android:paddingRight="20dp"
+        android:layout_marginRight="20dp"
         android:inputType="textPersonName"
         android:layout_below="@id/location_tv"
         android:hint="Tags..." />
@@ -95,11 +96,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAllCaps="false"
-        android:backgroundTint="@color/White"
+        android:backgroundTint="@color/LightGrey"
         android:layout_below="@id/edit_tags"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="250dp"
-        android:text="post" />
+        android:text="Post" />
 
 
 </RelativeLayout>
