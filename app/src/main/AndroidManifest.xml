@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.ellehacks"
-    xmlns:tools="http://schemas.android.com/tools">
+    package="com.example.ellehacks">
 
     <application
         android:allowBackup="true"
@@ -9,18 +8,19 @@
         android:label="xenia"
         android:roundIcon="@mipmap/logo_round"
         android:supportsRtl="true"
-        tools:ignore="GoogleAppIndexingWarning"
         android:theme="@style/AppTheme">
 
         <activity
             android:name=".HomeActivity"
             android:label="xenia"
+            android:windowSoftInputMode="adjustPan"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
     </application>
 
