@@ -386,7 +386,7 @@
                     android:layout_width="@dimen/post_pic_size"
                     android:layout_height="@dimen/post_pic_size"
                     android:layout_below="@id/post_profile_pic_5"
-                    app:srcCompat="@drawable/post_5" />
+                    app:srcCompat="@drawable/scroll_post_4" />
 
                 <ImageButton
                     android:id="@+id/heart_btn5"
