@@ -63,7 +63,7 @@
             app:srcCompat="@drawable/post_icon" />
 
         <ImageButton
-            android:id="@+id/profile_btn"
+            android:id="@+id/heart_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignBottom="@+id/post_btn"

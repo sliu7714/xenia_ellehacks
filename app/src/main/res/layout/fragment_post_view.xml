@@ -1,38 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-    android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ExploreLikeFragment">
+    tools:context=".PostViewFragment">
 
-    <EditText
-        android:id="@+id/SearchBar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="35dp"
-        android:layout_marginEnd="35dp"
-        android:ems="12"
-        android:hint="Search..."
-        android:inputType="textPersonName"
-        android:paddingTop="20sp"
-        android:textSize="20dp"
-        />
-
+    <!--1st post-->
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ImageButton
+        <ImageView
             android:id="@+id/post_profile_pic"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="5dp"
-            app:srcCompat="@drawable/profile_pic_face_3" />
+            app:srcCompat="@drawable/album_4" />
 
         <TextView
             android:id="@+id/post_username"
@@ -41,7 +28,7 @@
             android:layout_marginLeft="5dp"
             android:layout_marginTop="15dp"
             android:layout_toRightOf="@id/post_profile_pic"
-            android:text="sophia.bns" />
+            android:text="jessie.miller7" />
 
         <ImageView
             android:id="@+id/post_image"
@@ -49,46 +36,33 @@
             android:layout_height="330dp"
             android:layout_below="@id/post_profile_pic"
             android:layout_marginLeft="15dp"
-            app:srcCompat="@drawable/shirt_pic_2" />
+            app:srcCompat="@drawable/album_1" />
 
-
-        <!--<ImageButton-->
-            <!--android:id="@+id/heart_btn"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_below="@id/post_image"-->
-            <!--android:layout_marginLeft="25dp"-->
-            <!--android:layout_marginTop="11dp"-->
-            <!--android:layout_marginBottom="5dp"-->
-            <!--android:backgroundTint="@color/Transparent"-->
-            <!--android:scaleX="1.6"-->
-            <!--android:scaleY="1.6"-->
-            <!--app:srcCompat="@drawable/heart_icon" />-->
-
-        <TextView
-            android:id="@+id/like_num_tv"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/post_image"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_toRightOf="@id/heart_btn"
-            android:textSize="18sp" />
 
         <ImageButton
             android:id="@+id/heart_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/post_image"
-            android:layout_marginLeft="12dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
             android:layout_marginBottom="5dp"
-            android:layout_toRightOf="@id/heart_btn"
             android:backgroundTint="@color/Transparent"
-            android:scaleX="2.1"
-            android:scaleY="2.1"
-            android:tint="@color/Black"
-            app:srcCompat="@drawable/dislike" />
+            android:scaleX="1.6"
+            android:scaleY="1.6"
+            app:srcCompat="@drawable/heart_icon" />
+
+        <TextView
+            android:id="@+id/like_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/post_image"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@id/heart_btn"
+            android:text="47"
+            android:textSize="18sp" />
+
 
         <TextView
             android:id="@+id/like_num_tv_1"
@@ -108,7 +82,7 @@
             android:layout_marginLeft="30dp"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
-            android:text="Yellow, black plaid shirt"
+            android:text="Brown knit striped sweater"
             android:textSize="18sp" />
 
 
@@ -133,7 +107,7 @@
             android:layout_marginLeft="25dp"
             android:layout_marginTop="1dp"
             android:background="@color/Grey"
-            android:text="#white" />
+            android:text="#brown" />
 
         <TextView
             android:id="@+id/textView4"
@@ -144,7 +118,7 @@
             android:layout_marginTop="1dp"
             android:layout_toRightOf="@id/textView3"
             android:background="@color/Grey"
-            android:text="#black" />
+            android:text="#stripes" />
 
         <TextView
             android:id="@+id/textView5"
@@ -155,7 +129,7 @@
             android:layout_marginTop="1dp"
             android:layout_toRightOf="@id/textView4"
             android:background="@color/Grey"
-            android:text="#plaid" />
+            android:text="#medium" />
 
         <TextView
             android:id="@+id/textView6"
@@ -166,7 +140,7 @@
             android:layout_marginTop="1dp"
             android:layout_toRightOf="@id/textView5"
             android:background="@color/Grey"
-            android:text="#jacket" />
+            android:text="#sweater" />
 
         <TextView
             android:id="@+id/textView7"
@@ -177,7 +151,7 @@
             android:layout_marginTop="1dp"
             android:layout_toRightOf="@id/textView6"
             android:background="@color/Grey"
-            android:text="#shirt" />
+            android:text="#red" />
 
         <TextView
             android:id="@+id/textView8"
@@ -190,24 +164,29 @@
             android:background="@color/Grey"
             android:text="#trendy" />
 
+        <ImageView
+            android:id="@+id/pin_map_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView3"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="25dp"
+            android:scaleX="1.3"
+            android:scaleY="1.3"
+            android:src="@drawable/pin_icon" />
+
+        <TextView
+            android:id="@+id/city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView3"
+            android:layout_toRightOf="@id/pin_map_icon"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="5dp"
+            android:text="Toronto ON" />
+
 
     </RelativeLayout>
-
-    <EditText
-        android:id="@+id/searchBar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="35dp"
-        android:layout_marginEnd="35dp"
-        android:ems="12"
-        android:hint="Search..."
-        android:inputType="textPersonName"
-        android:paddingTop="20sp"
-        android:textSize="20dp"
-        />
-
-    <!--1st post-->
     <!--end 1st post-->
-
 
 </LinearLayout>

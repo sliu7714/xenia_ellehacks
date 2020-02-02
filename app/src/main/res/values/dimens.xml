@@ -3,7 +3,7 @@
 
     <!--post card dimentions-->
     <dimen name="post_pic_size">380dp</dimen>
-    <dimen name="post_height">500dp</dimen>
+    <dimen name="post_height">530dp</dimen>
     <dimen name="grid_side">120dp</dimen>
 
 

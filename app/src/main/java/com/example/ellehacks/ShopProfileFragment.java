@@ -37,7 +37,7 @@ public class ShopProfileFragment extends Fragment {
             public void onClick(View v) {
                 follow.setText("followed");
                 follow.setBackgroundColor(Color.parseColor("#F2F2F2"));
-                followers.setText("3284");
+                followers.setText("6284");
 
             }
 

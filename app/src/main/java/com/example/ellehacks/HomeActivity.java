@@ -1,14 +1,11 @@
 package com.example.ellehacks;
 
-import android.graphics.Color;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.TextView;
-import android.widget.Toast;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -66,7 +63,7 @@ public class HomeActivity extends AppCompatActivity {
         });
 
         // changing fragment to user profile if profile icon on bottom bar is clicked
-        ImageButton profileButton = (ImageButton)findViewById(R.id.profile_btn);
+        ImageButton profileButton = (ImageButton)findViewById(R.id.heart_btn);
         profileButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

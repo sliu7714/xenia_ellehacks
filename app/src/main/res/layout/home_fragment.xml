@@ -78,7 +78,6 @@
                     app:srcCompat="@drawable/heart_icon"
                     android:tint="@color/Black"/>
 
-
                 <TextView
                     android:id="@+id/like_num_tv"
                     android:layout_width="wrap_content"
@@ -88,7 +87,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginLeft="10dp"
                     android:layout_below="@id/post_image"
-                    android:text="123"/>
+                    android:text="123" />
 
                 <ImageButton
                     android:id="@+id/profile_btn"
@@ -106,11 +105,10 @@
                     android:id="@+id/desc"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/post_image"
-                    android:layout_alignBottom="@+id/like_num_tv"
+                    android:layout_below="@id/heart_btn"
                     android:layout_marginLeft="30dp"
-                    android:layout_marginTop="47dp"
-                    android:layout_marginBottom="-37dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="20dp"
                     android:text="Yellow, black plaid shirt"
                     android:textSize="18sp" />
 
@@ -186,11 +184,10 @@
                     android:id="@+id/desc_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/post_image2"
-                    android:layout_alignBottom="@+id/profile_btn2"
+                    android:layout_below="@id/heart_btn2"
                     android:layout_marginLeft="30dp"
-                    android:layout_marginTop="47dp"
-                    android:layout_marginBottom="-27dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="20dp"
                     android:text="Black leather jacket"
                     android:textSize="18sp" />
             </RelativeLayout>
@@ -268,11 +265,10 @@
                     android:id="@+id/desc_2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/post_image_3"
-                    android:layout_alignBottom="@+id/profile_btn3"
+                    android:layout_below="@id/heart_btn3"
                     android:layout_marginLeft="30dp"
-                    android:layout_marginTop="47dp"
-                    android:layout_marginBottom="-27dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="20dp"
                     android:text="Pink denim overall dress"
                     android:textSize="18sp" />
             </RelativeLayout>
@@ -349,11 +345,10 @@
                     android:id="@+id/desc_3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/post_image_4"
-                    android:layout_alignBottom="@+id/profile_btn4"
+                    android:layout_below="@id/heart_btn4"
                     android:layout_marginLeft="30dp"
-                    android:layout_marginTop="45dp"
-                    android:layout_marginBottom="-26dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="20dp"
                     android:text="Denim wave jacket"
                     android:textSize="18sp" />
             </RelativeLayout>
@@ -430,12 +425,11 @@
                     android:id="@+id/desc_4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/post_image_5"
-                    android:layout_alignBottom="@+id/profile_btn5"
+                    android:layout_below="@id/heart_btn5"
                     android:layout_marginLeft="30dp"
-                    android:layout_marginTop="40dp"
-                    android:layout_marginBottom="-20dp"
-                    android:text="Blue Waterproof Winter Coat"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="Black and gold beaded bracelet"
                     android:textSize="18sp" />
             </RelativeLayout>
             <!--end 5th post-->
