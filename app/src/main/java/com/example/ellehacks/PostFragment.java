@@ -6,6 +6,8 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageButton;
 
 
 /**
@@ -13,6 +15,7 @@ import android.view.ViewGroup;
  */
 public class PostFragment extends Fragment {
 
+    private ImageButton next;
 
     public PostFragment() {
         // Required empty public constructor
@@ -23,7 +26,21 @@ public class PostFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_post, container, false);
+        View view =  inflater.inflate(R.layout.fragment_post, container, false);
+
+        next = view.findViewById(R.id.next_btn);
+        next.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                HomeActivity.fragmentManager.beginTransaction()
+                        .replace(R.id.FragmentContainer, new PostEditFragment(), null)
+                        .addToBackStack(null)
+                        .commit();
+            }
+
+        });
+
+        return view;
     }
 
 }
