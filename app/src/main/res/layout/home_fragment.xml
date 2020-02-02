@@ -40,7 +40,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/post_height">
-                <ImageView
+                <ImageButton
                     android:id="@+id/post_profile_pic"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
@@ -125,7 +125,7 @@
                     android:layout_height="40dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginLeft="20dp"
-                    app:srcCompat="@drawable/profile_pic_face_1" />
+                    app:srcCompat="@drawable/album_12" />
 
                 <TextView
                     android:id="@+id/post_username2"

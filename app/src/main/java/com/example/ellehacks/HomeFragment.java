@@ -24,6 +24,7 @@ public class HomeFragment extends Fragment {
     private TextView likes_1;
     private TextView likes_2;
 
+    private ImageButton chat_icon;
 
 
     public HomeFragment() {
@@ -68,8 +69,18 @@ public class HomeFragment extends Fragment {
                         .replace(R.id.FragmentContainer, new ShopProfileFragment(), null)
                         .addToBackStack(null)
                         .commit();
+            }
 
+        });
 
+        chat_icon = view.findViewById(R.id.profile_btn2);
+        chat_icon.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                HomeActivity.fragmentManager.beginTransaction()
+                        .replace(R.id.FragmentContainer, new ChatFragment(), null)
+                        .addToBackStack(null)
+                        .commit();
             }
 
         });
