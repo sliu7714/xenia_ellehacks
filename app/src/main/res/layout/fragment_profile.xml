@@ -126,6 +126,7 @@
                 <!--row 0-->
                 <ImageView
                     android:id="@+id/pic_00"
+                    android:clickable="true"
                     android:layout_width="@dimen/grid_side"
                     android:layout_height="@dimen/grid_side"
                     android:src="@drawable/album_1"
