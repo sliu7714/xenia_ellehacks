@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostEditFragment">
+
+
+    <ImageView
+        android:id="@+id/profile_pic"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/album_4" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="jessie.miller7"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/profile_pic"/>
+
+    <ImageView
+        android:id="@+id/post_image"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/album_1"
+        android:layout_toRightOf="@id/profile_pic"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <EditText
+        android:id="@+id/edit_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="20"
+        android:textSize="14sp"
+        android:hint="Write a description..."
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/post_image"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/location_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Location"
+        android:layout_below="@id/edit_description"
+        android:layout_marginLeft="17dp"
+        android:textColor="@color/Black"
+        android:layout_marginTop="13dp"/>
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="14"
+        android:textSize="14sp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/edit_description"
+        android:layout_toRightOf="@id/location_tv"
+
+        android:inputType="textPersonName"/>
+
+    <!--<TextView-->
+        <!--android:id="@+id/size_tv"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textColor="@color/Black"-->
+        <!--android:layout_below="@id/location_tv"-->
+        <!--android:layout_marginLeft="17dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:textSize="17sp"-->
+        <!--android:text="Tags" />-->
+
+    <EditText
+        android:id="@+id/edit_tags"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="20"
+        android:layout_marginLeft="16dp"
+        android:paddingRight="20dp"
+        android:inputType="textPersonName"
+        android:layout_below="@id/location_tv"
+        android:hint="Tags..." />
+
+    <Button
+        android:id="@+id/post_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/White"
+        android:layout_below="@id/edit_tags"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="250dp"
+        android:text="post" />
+
+
+</RelativeLayout>

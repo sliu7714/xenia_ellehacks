@@ -40,7 +40,7 @@
             android:layout_below="@id/username"
             android:layout_toRightOf="@id/followers_num"
             android:layout_marginLeft="70dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="15dp"
             android:textSize="18sp"
             android:textColor="@color/Black"/>
 
@@ -52,7 +52,7 @@
             android:layout_below="@id/username"
             android:layout_toRightOf="@id/profile_pic"
             android:layout_marginLeft="45dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="15dp"
             android:textSize="18sp"
             android:textColor="@color/Black"/>
 
@@ -71,7 +71,7 @@
             android:layout_height="wrap_content"
             android:text="followers"
             android:layout_toRightOf="@id/profile_pic"
-            android:layout_marginLeft="31dp"
+            android:layout_marginLeft="35dp"
             android:layout_below="@id/followers_num" />
 
         <Button
@@ -99,6 +99,16 @@
             android:scaleY="0.6"
             android:scaleX="0.6"
             />
+
+        <TextView
+            android:id="@+id/shop_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/profile_pic"
+            android:layout_marginTop="65dp"
+
+            android:layout_marginLeft="40dp"
+            android:text="shop" />
 
 
     </RelativeLayout>
