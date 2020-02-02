@@ -61,7 +61,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="following"
-            android:layout_marginLeft="40dp"
+            android:layout_marginLeft="42dp"
             android:layout_below="@id/following_num"
             android:layout_toRightOf="@id/followers_tv"/>
 
@@ -69,17 +69,16 @@
             android:id="@+id/followers_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView"
-            tools:text="followers"
+            android:text="followers"
             android:layout_toRightOf="@id/profile_pic"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="31dp"
             android:layout_below="@id/followers_num" />
 
         <Button
             android:id="@+id/edit_profile_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="edit profile"
+            android:text="follow"
             android:textAllCaps="false"
             android:backgroundTint="@color/White"
             android:layout_below="@id/followers_tv"
@@ -91,7 +90,6 @@
 
         <RatingBar
             android:id="@+id/ratingBar"
-            android:isIndicator="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 

@@ -64,6 +64,21 @@ public class HomeFragment extends Fragment {
             }
         });
 
+        //changing fragment to profile of clotho once their username is clicked
+        TextView clotho = view.findViewById(R.id.post_username3);
+        clotho.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                HomeActivity.fragmentManager.beginTransaction()
+                        .replace(R.id.FragmentContainer, new ShopProfileFragment(), null)
+                        .addToBackStack(null)
+                        .commit();
+
+
+            }
+
+        });
+
 
 
         return view;
