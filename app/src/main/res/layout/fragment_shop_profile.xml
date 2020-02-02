@@ -75,7 +75,7 @@
             android:layout_below="@id/followers_num" />
 
         <Button
-            android:id="@+id/edit_profile_btn"
+            android:id="@+id/follow_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="follow"
