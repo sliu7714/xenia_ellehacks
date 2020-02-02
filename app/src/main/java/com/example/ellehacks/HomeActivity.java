@@ -1,11 +1,13 @@
 package com.example.ellehacks;
 
+import android.graphics.Color;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class HomeActivity extends AppCompatActivity {
@@ -91,5 +93,20 @@ public class HomeActivity extends AppCompatActivity {
             }
 
         });
+
+
+//        TextView clotho = findViewById(R.id.post_username3);
+//        clotho.setOnClickListener(new View.OnClickListener(){
+//            @Override
+//            public void onClick(View v) {
+//                HomeActivity.fragmentManager.beginTransaction()
+//                        .replace(R.id.FragmentContainer, new ShopProfileFragment(), null)
+//                        .addToBackStack(null)
+//                        .commit();
+//
+//
+//            }
+//
+//        });
     }
 }

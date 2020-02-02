@@ -206,16 +206,17 @@
                     android:layout_height="40dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginLeft="20dp"
-                    app:srcCompat="@drawable/profile_pic_face_2" />
+                    app:srcCompat="@drawable/shop_profile_pic" />
 
 
                 <TextView
                     android:id="@+id/post_username3"
+                    android:clickable="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
                     android:layout_marginLeft="10dp"
-                    android:text="christine.p"
+                    android:text="clotho"
                     android:layout_toRightOf="@id/post_profile_pic_3"/>
 
                 <ImageView
@@ -288,7 +289,7 @@
                     android:layout_height="40dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginLeft="20dp"
-                    app:srcCompat="@drawable/profile_pic_face_3"
+                    app:srcCompat="@drawable/album_9"
                     />
 
                 <TextView
@@ -370,7 +371,7 @@
                     android:layout_height="40dp"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="10dp"
-                    app:srcCompat="@drawable/profile_pic_face_4"/>
+                    app:srcCompat="@drawable/album_12"/>
 
                 <TextView
                     android:id="@+id/post_username5"

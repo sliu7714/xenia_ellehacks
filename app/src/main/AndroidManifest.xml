@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.ellehacks">
+    package="com.example.ellehacks"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <application
         android:allowBackup="true"
@@ -8,7 +9,9 @@
         android:label="xenia"
         android:roundIcon="@mipmap/logo_round"
         android:supportsRtl="true"
+        tools:ignore="GoogleAppIndexingWarning"
         android:theme="@style/AppTheme">
+
         <activity
             android:name=".HomeActivity"
             android:label="xenia"
