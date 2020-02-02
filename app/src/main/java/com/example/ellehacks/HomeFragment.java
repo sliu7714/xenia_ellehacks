@@ -29,6 +29,8 @@ public class HomeFragment extends Fragment {
     private TextView likes_1;
     private TextView likes_2;
 
+
+
     public HomeFragment() {
         // Required empty public constructor
     }
@@ -61,6 +63,9 @@ public class HomeFragment extends Fragment {
                 likes_2.setText("49");
             }
         });
+
+
+
         return view;
 
 
